@@ -1,0 +1,99 @@
+.page-login-body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.page-login {
+    // Fonts & Reset
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+
+    // Container Login
+    .login-container {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        text-align: center;
+        
+    }
+
+    // Tiêu đề (chỉ áp dụng cho trang login)
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    // Input Group
+    .input-group {
+        margin-bottom: 15px;
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+
+            &:focus {
+                border-color: #2a5298;
+                outline: none;
+                box-shadow: 0px 0px 5px rgba(42, 82, 152, 0.5);
+            }
+        }
+    }
+
+    // Nút đăng nhập
+    .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background-color: #2a5298;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #1e3c72;
+        }
+    }
+
+    // Thông báo lỗi
+    .error {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    // Link đăng ký
+    .register-link {
+        margin-top: 10px;
+        font-size: 14px;
+
+        a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

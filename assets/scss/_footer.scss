@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+.footer {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+
+    .footer-container {
+        display: flex;
+        justify-content: center; // Căn giữa nội dung
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        padding: 10px;
+        text-align: center; // Đảm bảo nội dung căn giữa
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: $accent-color;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+        color: $footer-text;
+    }
+}

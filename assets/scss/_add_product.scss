@@ -1,0 +1,77 @@
+@use "variables" as *;
+
+.page-add-product {
+    background: $body-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: $font-main;
+
+    h2 {
+        color: $secondary-color;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    form {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: $text-color;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $table-border;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s ease;
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input[type="file"] {
+            border: none;
+            background: $body-bg;
+            padding: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: $primary-color;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: darken($primary-color, 10%);
+            }
+        }
+    }
+}
